@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Frankie B Pinat">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="Assets/logo.png" type="image/png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<title>Calculator</title>
+</head>
+
+<body>
+
+	<!------------------------------ HOME ------------------------------>
+
+	<div id="Home">
+		<div id="innerHome">
+			<button id="start">Get Started</h1>
+		</div>
+	</div>
+	<div id="Nav">
+		<div id="innerNav">
+			<i id="back" class="fa fa-arrow-left"></i>
+			<div class="right">
+				<button class="links" id="mr">More</button>
+			</div>
+		</div>
+	</div>
+	<div id="Nav1">
+		<div id="innerNav1">
+			<i id="back1" class="fa fa-arrow-left"></i>
+			<div class="right">
+				<button class="links" id="nf">info</button>
+			</div>
+		</div>
+	</div>
+	<div id="Card">
+		<div id="innerCard">
+			<i id="cls" class="fa fa-close"></i>
+			<h1 id="logo">More</h1>
+			<p id="prgrph">
+				Also try to check this out! My IOS-inspired calculator.
+			</p>
+			<img id="vrsn" src="Assets/calc.jpg" alt="IOS">
+		</div>
+	</div>
+	<div id="Card1">
+		<div id="innerCard1">
+			<i id="cls1" class="fa fa-close"></i>
+			<h1 id="logo1">Info</h1>
+			<p id="prgrph1">
+				This is an IOS-inspired calculator created and developed
+				by Frankie B. Pinat. It is made with the purpose of
+				promoting "Battle of the Calcus", an online contest aiming
+				to showcase programmers' skills and creativity.
+			</p>
+		</div>
+	</div>
+
+	<!------------------------------ HOME ------------------------------>
+	<!------------------------------ ORIGINAL ------------------------------>
+
+	<div id="original">
+		<div id="box">
+			<div class="innerbox">
+				<h1>calculator</h1>
+				<select id="operator" onChange="setValue()">
+					<option value="add"> ADD</option>
+					<option value="subtract"> SUBTRACT</option>
+					<option value="multiply"> MULTIPLY</option>
+					<option value="divide"> DIVIDE</option>
+				</select>
+				<input type="number" id="num1" maxLength="10" placeholder=" 1rst number">
+				<input type="number" id="num2" maxLength="10" placeholder=" 2nd number">
+				<input type="number" id="result1" placeholder="" value="">
+				<button id="btn" onclick="calculate()">ok</button>
+			</div>
+		</div>
+	</div>
+
+	<!------------------------------ ORIGINAL ------------------------------>
+	<!------------------------------ IOS ------------------------------>
+
+	<div id="IOS">
+		<div id="innerIOS">
+			<div id="calculator">
+				<div id="top">
+					<div id="circle"></div>
+				</div>
+				<div id="result">
+					<div id="history">
+						<p id="history-value"></p>
+					</div>
+					<div id="output">
+						<p id="output-value"></p>
+					</div>
+				</div>
+				<div id="keyboard">
+					<button class="operator" id="clear">AC</button>
+					<button class="operator" id="backspace">C</button>
+					<button class="operator" id="/">&#247;</button>
+					<button class="number" id="7">7</button>
+					<button class="number" id="8">8</button>
+					<button class="number" id="9">9</button>
+					<button class="operator" id="*">&times;</button>
+					<button class="number" id="4">4</button>
+					<button class="number" id="5">5</button>
+					<button class="number" id="6">6</button>
+					<button class="operator" id="-">-</button>
+					<button class="number" id="1">1</button>
+					<button class="number" id="2">2</button>
+					<button class="number" id="3">3</button>
+					<button class="operator" id="+">+</button>
+					<button class="operator" id="%">%</button>
+					<button class="number" id="0">0</button>
+					<button class="operator" id="=">=</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!------------------------------ IOS ------------------------------>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
